@@ -1,0 +1,191 @@
+/*******************************************************************************************/
+/* General Settings Page
+/*******************************************************************************************/
+#crfo-form-settings-wrapper { position: relative; max-width: 740px; padding-right: 330px; }
+#crfo-form-settings-sidebar { position: absolute; top: 0; right: 0; width: 310px; }
+
+#crfo-mailchimp-subscribe-wrapper { border-top: 2px solid #3498db; padding: 25px; box-shadow: 0 1px 1px -1px rgba(0,0,0,.1); background: #fff; color: #555; font-size: 13px; border-radius: 3px; }
+#crfo-mailchimp-subscribe-wrapper h3 { margin-top: 0; margin-bottom: 0; }
+#crfo-mailchimp-subscribe-wrapper p { margin-top: 5px; margin-bottom: 15px; }
+#crfo-mailchimp-subscribe-wrapper label { display: block; margin-bottom: 5px; }
+#crfo-mailchimp-subscribe-wrapper input[type=text],
+#crfo-mailchimp-subscribe-wrapper input[type=email] { margin-bottom: 10px; width: 100%; }
+
+
+/*******************************************************************************************/
+/* General Settings Tabs and Nav Tabs
+/*******************************************************************************************/
+.crfo-settings-nav-tab-wrapper { width: 100%; max-width: 740px; box-sizing: border-box; margin: 12px 0; padding: 0 10px 0 0; box-shadow: 0 1px 1px -1px rgba(0,0,0,.1); background: #fff; color: #555; font-size: 13px; border-radius: 3px; }
+
+.crfo-settings-nav-tab-logo { position: relative; display: inline-block; border-radius: 5px; cursor: pointer; transition: all 0.2s ease-in-out; }
+.crfo-settings-nav-tab-logo img { max-width: 40px; height: auto; padding: 8px; vertical-align: middle; border-radius: 4px; }
+.crfo-settings-nav-tab-logo:hover { background: #f9f9f9; }
+
+#crfo-woof-woof { position: absolute; z-index: 100; width: 80px; background: #34495e; color: #fff; text-align: center; font-weight: bold; font-size: 11px; padding: 7px 10px; border-radius: 4px; bottom: -50px; box-shadow: 0 2px 5px 2px rgba(0,0,0,0.08); visibility: hidden; opacity: 0; transform: scale(0.85); transition: all 0.2s ease-in-out; }
+.crfo-settings-nav-tab-logo:hover #crfo-woof-woof { bottom: -40px; visibility: visible; opacity: 1; transform: scale(1); }
+
+#crfo-woof-woof:after { content: ""; position: absolute; top: -7px; left: 21px; border-width: 0 7px 7px; border-style: solid; border-color: #34495e transparent; display: block; width: 0; }
+
+.crfo-settings-nav-tab { display: inline-block; vertical-align: middle; padding: 19px 0 15px; color: #767676; border-bottom: 4px solid transparent; margin: 0 10px; font-weight: bold; text-decoration: none; }
+.crfo-settings-nav-tab:focus,
+.crfo-settings-nav-tab.nav-tab-active:hover { border-bottom-width: 4px; box-shadow: none !important; }
+.crfo-settings-nav-tab.crfo-active,
+.crfo-settings-nav-tab.crfo-active:hover { color: #454545; background: #fff; opacity: 1; border-color: inherit; }
+.crfo-settings-nav-tab .dashicons { margin-right: 7px; }
+
+.crfo-settings-panel-wrapper,
+.crfo-settings-tabs-wrapper { position: relative; background-color: #fff;  overflow: hidden; margin-bottom: 10px; -webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,.1); box-shadow: 0 1px 1px -1px rgba(0,0,0,.1); -moz-box-sizing: border-box; box-sizing: border-box; padding: 38px 38px 0 38px; max-width: 740px; border-radius: 3px; }
+
+.crfo-settings-panel-wrapper > :first-child,
+.crfo-settings-panel-wrapper > :first-child :first-child { margin-top: 0; }
+
+.crfo-tab,
+.crfo-sub-tab,
+.crfo-opt-in-settings-tab { display: none; }
+.crfo-tab.crfo-active,
+.crfo-sub-tab.crfo-active,
+.crfo-settings-tab.crfo-active { display: block; }
+.crfo-settings-tab > :first-child,
+.crfo-settings-tab > :first-child :first-child { margin-top: 0; }
+
+.crfo-settings-footer { padding: 25px 0; border-top: 1px solid #e1e1e1; }
+.crfo-settings-footer input:focus { box-shadow: none !important; outline: none; }
+
+
+/*******************************************************************************************/
+/* Settings Fields
+/*******************************************************************************************/
+.crfo-settings-heading { border-bottom: 1px solid #e1e1e1; margin: 45px 0 25px 0; }
+
+.crfo-settings-field { position: relative; padding-left: 200px; margin-bottom: 21px; min-height: 32px; }
+.crfo-settings-field[data-conditional] { display: none; }
+.crfo-settings-field .crfo-settings-field-label { position: absolute; top: 0; left: 0; width: 170px; padding-right: 20px; font-weight: bold; color: #555; }
+
+.crfo-settings-field input[type=text],
+.crfo-settings-field input[type=password],
+.crfo-settings-field textarea { border-radius: 3px; }
+
+.crfo-settings-field-text input[type=text],
+.crfo-settings-field-password input[type=password] { height: 32px; width: 100%; }
+.crfo-settings-field-textarea textarea { min-height: 150px; width: 100%; }
+
+.crfo-settings-field input:disabled,
+.crfo-settings-field textarea:disabled { background: #f3f3f3; }
+
+.crfo-settings-field select { height: 32px; }
+
+.crfo-settings-field *.crfo-small { width: 105px !important; margin-right: 7px; }
+.crfo-settings-field *.crfo-medium { width: 255px !important; margin-right: 7px; }
+.crfo-settings-field *.crfo-wide { width: 100%; }
+
+.crfo-settings-field-checkbox_multiple label:not(.crfo-settings-field-label) { margin-right: 12px; }
+
+/* Switch Default */
+.crfo-switch { position: relative; display: inline-block; }
+.crfo-toggle { position: absolute; margin-left: -9999px; visibility: hidden; }
+.crfo-toggle + label { display: block; position: relative; cursor: pointer; outline: none; user-select: none; }
+input.crfo-toggle-round + label { padding: 3px; width: 40px; height: 18px; background-color: #dddddd; border-radius: 18px; transition: background 0.4s; }
+input.crfo-toggle-round + label:before,
+input.crfo-toggle-round + label:after { display: block; position: absolute; top: 2px; left: 2px; bottom: 2px; content: ""; }
+input.crfo-toggle-round + label:before { right: 3px; border-radius: 18px; transition: background 0.4s; }
+input.crfo-toggle-round + label:after { width: 18px; background-color: #fff; border-radius: 100%; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); transition: margin 0.4s; }
+input.crfo-toggle-round:checked + label { background-color: #2ecc71; }
+input.crfo-toggle-round.crfo-orange:checked + label { background-color: #f39c12; }
+input.crfo-toggle-round:checked + label:after { margin-left: 22px; }
+
+/* Switch Small */
+.crfo-switch.small input.crfo-toggle-round + label { width: 30px; height: 15px; }
+.crfo-switch.small input.crfo-toggle-round + label:after { width: 17px; }
+.crfo-switch.small input.crfo-toggle-round:checked + label:after { margin-left: 15px; }
+
+
+/*******************************************************************************************/
+/* Tooltips
+/*******************************************************************************************/
+.crfo-settings-field-tooltip-wrapper {
+	position: relative;
+	top: -1px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+}
+
+.crfo-settings-field-tooltip-icon:before {
+	content: '?';
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+	background: #a1a1a1;
+	border-radius: 9px;
+	cursor: pointer;
+
+	-moz-transition: all 0.15s ease-in;
+	-webkit-transition: all 0.15s ease-in;
+	-o-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+
+.crfo-settings-field-tooltip-icon:hover:before {
+	background: #888;
+}
+
+.crfo-settings-field-tooltip {
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 28px;
+	left: -25px;
+	width: 220px;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	border-radius: 4px;
+	padding: 6px 10px;
+	font-weight: normal;
+	transition: all 0.2s ease-in-out;
+}
+
+.crfo-settings-field-tooltip:before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 5px;
+	width: 9px;
+	top: -5px;
+	left: 29px;
+	background: url('../img/crfo-icon-tooltip.png') no-repeat center;
+}
+
+
+.crfo-form-field-settings-wrapper { position: relative; }
+
+.crfo-form-field-settings-name { position: relative; padding: 15px 0; border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7; cursor: pointer; transition: all 0.3s ease-in-out; }
+
+.crfo-form-field-settings-wrapper.crfo-first .crfo-form-field-settings-name { border-top: 1px solid #fff; }
+
+.crfo-form-field-settings-wrapper.crfo-last .crfo-form-field-settings-name { border-bottom: 1px solid #fff; }
+.crfo-form-field-settings-wrapper.crfo-last .crfo-form-field-settings-inner { border-bottom: 0; }
+
+.crfo-form-field-settings-wrapper.crfo-first.crfo-active .crfo-form-field-settings-name { border-top: 1px solid #e7e7e7; }
+.crfo-form-field-settings-wrapper.crfo-last.crfo-active .crfo-form-field-settings-name { border-bottom: 1px solid #e7e7e7; }
+
+.crfo-form-field-settings-name .dashicons { float: right; color: #777; transition: all 0.3s ease-in-out; }
+.crfo-form-field-settings-wrapper.crfo-active .dashicons { transform: rotate(-180deg); }
+
+.crfo-form-field-settings-inner { display: none; }
+.crfo-form-field-settings-inner:after { content: ''; display: block; position: relative; top: 0px; width: 100%; height: 1px; background: #e7e7e7; }
+.crfo-form-field-settings-wrapper.crfo-last .crfo-form-field-settings-inner:after { display: none; }
+
+.crfo-form-field-settings-inner .crfo-settings-field { margin-top: 20px; }
+
+.crfo-form-field-settings-inner textarea { min-height: 80px; }
+
+.crfo-form-field-settings-wrapper.crfo-active .crfo-form-field-settings-name { background: #f7f7f7; margin-left: -40px; margin-right: -40px; padding-left: 40px; padding-right: 40px; }
+.crfo-form-field-settings-wrapper.crfo-active .crfo-form-field-settings-inner:after { margin-left: -40px; margin-right: -40px; padding-left: 40px; padding-right: 40px; }

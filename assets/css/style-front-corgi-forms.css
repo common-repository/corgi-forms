@@ -1,0 +1,74 @@
+/*******************************************************************************************/
+/* Form Errors
+/*******************************************************************************************/
+.corgi-forms-form-errors {
+	display: none;
+	background: rgba(192,57,43,0.35);
+	border: 1px solid #c0392b;
+	color: #c0392b;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.corgi-forms-form-errors.corgi-forms-form-has-errors {
+	display: block;
+}
+
+/*******************************************************************************************/
+/* Form Success
+/*******************************************************************************************/
+.corgi-forms-form-success-message {
+	display: none;
+}
+
+/*******************************************************************************************/
+/* Field General
+/*******************************************************************************************/
+.corgi-forms-form-wrapper .corgi-forms-field {
+	margin-bottom: 20px;
+}
+
+.corgi-forms-form-wrapper .corgi-forms-field textarea {
+	min-height: 175px;
+}
+
+/*******************************************************************************************/
+/* Field Label
+/*******************************************************************************************/
+.corgi-forms-form-wrapper .corgi-forms-field label {
+	margin-bottom: 5px;
+}
+
+.corgi-forms-form-wrapper .corgi-forms-field .corgi-forms-field-label-required {
+	display: inline-block;
+	margin-left: 3px;
+}
+
+/*******************************************************************************************/
+/* Field Description
+/*******************************************************************************************/
+.corgi-forms-form-wrapper .corgi-forms-field-description-wrapper {
+	font-size: 0.9em;
+	opacity: 0.85;
+	margin: 5px 0;
+	font-style: italic;
+}
+
+.corgi-forms-form-wrapper .corgi-forms-field-description-wrapper p {
+	margin-bottom: 5px;
+}
+
+/*******************************************************************************************/
+/* Field Errors
+/*******************************************************************************************/
+.corgi-forms-form-wrapper .corgi-forms-field-errors-wrapper p {
+	margin-bottom: 5px;
+	font-size: 0.9em;
+	color: #c0392b;
+}
+
+.corgi-forms-form-wrapper .corgi-forms-field.corgi-forms-field-error input,
+.corgi-forms-form-wrapper .corgi-forms-field.corgi-forms-field-error textarea {
+	border: 1px solid #c0392b;
+}
